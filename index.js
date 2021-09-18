@@ -11,10 +11,6 @@ Client.on("ready", async () => {
     console.log(`${Client.user.tag} is Online`)
 })
 
-Client.on("interactionCreate", async interaction => {
-
-})
-
 Client.on("messageCreate", async message => {
     if(message.author.bot || message.channel.type == "DM") return
 })
