@@ -45,7 +45,7 @@ Client.on("messageCreate", async (message) => {
       const embed1 = new discord.MessageEmbed()
       .setColor("PURPLE")
       .setAuthor("SevenLifeRP Entwicklungsstand")
-      .setTitle("Stand 23.10.2021")
+      .setTitle("Stand 12.11.2021")
       .addField("SevenLifeRP :", "  ``███ 25%``")
       .addField("Noxans AntiCheat: ", " ``█████ 50%``")
       .addField("Noxans Discord Bot: ", "``██████ 60% ``")
