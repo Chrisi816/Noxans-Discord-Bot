@@ -58,8 +58,8 @@ Client.on("messageCreate", async (message) => {
       .setColor("PURPLE")
       .setAuthor("Sevenlife Fraktionen")
       .setTitle("Folgende Fraktion wurde gegründet:")
-      .addField("Fraktion", "<a:acceptit:908807440462675978> LCN (La Cosa Nostra)")
-      .addField("Don", "@Jxxq#4296")
+      .addField("Fraktion:", "<a:acceptit:908807440462675978> LCN (La Cosa Nostra)")
+      .addField("Don:", "@<457229726659117067>")
       .setFooter("Noxans_IngameSystems")
       message.channel.send({ embeds: [embed2]})
     }
@@ -68,8 +68,8 @@ Client.on("messageCreate", async (message) => {
       .setColor("PURPLE")
       .setAuthor("Sevenlife Fraktionen")
       .setTitle("Folgende Fraktion wurde gegründet:")
-      .addField("Fraktion", "<a:acceptit:908807440462675978> MG13 (Marabunta Grande 13)")
-      .addField("Don", "@74Hinata#4140")
+      .addField("Fraktion:", "<a:acceptit:908807440462675978> MG13 (Marabunta Grande 13)")
+      .addField("Patrón:", "@<@695344548733517996>")
       .setFooter("Noxans_IngameSystems")
       message.channel.send({ embeds: [embed2]})
     }
