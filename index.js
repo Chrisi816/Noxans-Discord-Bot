@@ -53,5 +53,25 @@ Client.on("messageCreate", async (message) => {
       .setFooter("Nexons_UpdateSystem")
       message.channel.send({ embeds: [embed1]})
       }
+    if (message.content === "!neuefraklcn") {
+      const embed2 = new discord.MessageEmbed()
+      .setColor("PURPLE")
+      .setAuthor("Sevenlife Fraktionen")
+      .setTitle("Folgende Fraktion wurde gegründet:")
+      .addField("Fraktion", "<a:acceptit:908807440462675978> LCN (La Cosa Nostra)")
+      .addField("Don", "@Jxxq#4296")
+      .setFooter("Noxans_IngameSystems")
+      message.channel.send({ embeds: [embed2]})
+    }
+    if (message.content === "!neuefrakmg13") {
+      const embed2 = new discord.MessageEmbed()
+      .setColor("PURPLE")
+      .setAuthor("Sevenlife Fraktionen")
+      .setTitle("Folgende Fraktion wurde gegründet:")
+      .addField("Fraktion", "<a:acceptit:908807440462675978> MG13 (Marabunta Grande 13)")
+      .addField("Don", "@74Hinata#4140")
+      .setFooter("Noxans_IngameSystems")
+      message.channel.send({ embeds: [embed2]})
+    }
 })
 Client.login(token)
