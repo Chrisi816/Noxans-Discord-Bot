@@ -46,10 +46,10 @@ Client.on("messageCreate", async (message) => {
       .setColor("PURPLE")
       .setAuthor("SevenLifeRP Entwicklungsstand")
       .setTitle("Stand 23.10.2021")
-      .addField("SevenLifeRP :", "  ``██ 20%``")
-      .addField("Noxans AntiCheat: ", " ``████ 40%``")
+      .addField("SevenLifeRP :", "  ``███ 25%``")
+      .addField("Noxans AntiCheat: ", " ``█████ 50%``")
       .addField("Noxans Discord Bot: ", "``██████ 60% ``")
-      .addField("Next Update:" ,  "29.10.21")
+      .addField("Next Update:" ,  "19.11.21")
       .setFooter("Nexons_UpdateSystem")
       message.channel.send({ embeds: [embed1]})
       }
