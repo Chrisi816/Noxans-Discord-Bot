@@ -61,6 +61,7 @@ Client.on("messageCreate", async (message) => {
       .addField("Fraktion:", "<a:acceptit:908806834196971631> LCN (La Cosa Nostra)")
       .addField("Don:", "<@457229726659117067>")
       .setFooter("Noxans_IngameSystems")
+      .setThumbnail("https://cdn.discordapp.com/attachments/858761371582464021/908812696676360232/WOD0G8a.png")
       message.channel.send({ embeds: [embed2]})
     }
     if (message.content === "!neuefrakmg13") {
@@ -70,6 +71,7 @@ Client.on("messageCreate", async (message) => {
       .setTitle("Folgende Fraktion wurde gegründet:")
       .addField("Fraktion:", "<a:acceptit:908806834196971631> MG13 (Marabunta Grande 13)")
       .addField("Patrón:", "<@695344548733517996>")
+      .setThumbnail("https://cdn.discordapp.com/attachments/858761371582464021/908812799092850738/mg13.png")
       .setFooter("Noxans_IngameSystems")
       message.channel.send({ embeds: [embed2]})
     }
