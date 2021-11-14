@@ -75,5 +75,16 @@ Client.on("messageCreate", async (message) => {
       .setFooter("Noxans_IngameSystems")
       message.channel.send({ embeds: [embed2]})
     }
+    if (message.content === "!neuefrakvvz") {
+    const embed2 = new discord.MessageEmbed()
+      .setColor("PURPLE")
+      .setAuthor("Sevenlife Fraktionen")
+      .setTitle("Folgende Fraktion wurde gegründet:")
+      .addField("Fraktion:", "<a:acceptit:908806834196971631> VVZ (Vory V Zakone)")
+      .addField("Don / s :", "<@784076542480875561> und <@444131992918032384>")
+      .setThumbnail("https://cdn.discordapp.com/attachments/858761371582464021/909539043652546650/1820af7ebe6748fa3045a186a60f4685_1.webp")
+      .setFooter("Noxans_IngameSystems")
+    message.channel.send({ embeds: [embed2] })
+  }
 })
 Client.login(token)
