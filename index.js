@@ -42,17 +42,17 @@ Client.on("messageCreate", async (message) => {
           });
     }
     if (message.content === "!serverstats") {
-      const embed1 = new discord.MessageEmbed()
+    const embed1 = new discord.MessageEmbed()
       .setColor("PURPLE")
       .setAuthor("SevenLifeRP Entwicklungsstand")
-      .setTitle("Stand 12.11.2021")
-      .addField("SevenLifeRP :", "  ``███ 25%``")
+      .setTitle("Stand 12.10.2021")
+      .addField("SevenLifeRP :", "  ``████ 32.5%``")
       .addField("Noxans AntiCheat: ", " ``█████ 50%``")
       .addField("Noxans Discord Bot: ", "``██████ 60% ``")
-      .addField("Next Update:" ,  "19.11.21")
-      .setFooter("Nexons_UpdateSystem")
-      message.channel.send({ embeds: [embed1]})
-      }
+      .addField("Next Update:", "19.11.21")
+      .setFooter("Noxans_UpdateSystem")
+    message.channel.send({ embeds: [embed1] })
+  }
     if (message.content === "!neuefraklcn") {
       const embed2 = new discord.MessageEmbed()
       .setColor("PURPLE")
