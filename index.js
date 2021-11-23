@@ -45,11 +45,11 @@ Client.on("messageCreate", async (message) => {
     const embed1 = new discord.MessageEmbed()
       .setColor("PURPLE")
       .setAuthor("SevenLifeRP Entwicklungsstand")
-      .setTitle("Stand 12.10.2021")
+      .setTitle("Stand 23.11.2021")
       .addField("SevenLifeRP :", "  ``████ 32.5%``")
       .addField("Noxans AntiCheat: ", " ``█████ 50%``")
       .addField("Noxans Discord Bot: ", "``██████ 60% ``")
-      .addField("Next Update:", "23.11.21")
+      .addField("Next Update:", "30.11.21")
       .setFooter("Noxans_UpdateSystem")
     message.channel.send({ embeds: [embed1] })
   }
