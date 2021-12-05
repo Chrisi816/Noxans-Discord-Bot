@@ -3,7 +3,6 @@ module.exports.run = async (inter) => {
     const isConnected = await music.isConnected({
         interaction: inter
     });
-    inter.reply({content:`Lied wurde gestoppt: ${song}`})
     if(!isConnected) return inter.reply({ content: 'There are no songs playing', ephemeral: true });
 
     const queue = await music.getQueue({
