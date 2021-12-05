@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@discordjs/rest": "^0.1.0-canary.0",
+    "@koenie06/discord.js-music": "^1.2.9",
     "discord-api-types": "^0.23.1",
     "discord-fivem-api": "^1.0.6",
     "discord.js": "^13.1.0",
