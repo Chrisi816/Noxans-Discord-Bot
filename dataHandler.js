@@ -42,6 +42,10 @@ async function createCmd(Client, guildId) {
             name: "stop",
             description: "Stop the Songs",
         },
+        {
+            name: "skip",
+            description: "skip the Songs",
+        },
     ]
     await Client.guilds.cache.get(guildId)?.commands.set(data)
 }
@@ -88,6 +92,10 @@ async function acCmd(Client, guildId) {
         {
             name: "stop",
             description: "Stop the Songs",
+        },
+        {
+            name: "skip",
+            description: "skip the Songs",
         },
     ]
     await Client.guilds.cache.get(guildId)?.commands.set(data)
