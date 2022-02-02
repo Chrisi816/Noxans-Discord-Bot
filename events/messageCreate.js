@@ -11,8 +11,23 @@ Client.on("messageCreate", async message => {
     if (!message.content.startsWith(prefix)) return
     commands.run(Client, message, args, prefix);
   }
+  
     
+})
+const isInvite = async (guild, code) => {
+  return await new Promise((resolve) => {
+    guild.invites.fetch().then((invites) => {
+      for (const invite of invites) {
+        if (code === invite[0]) {
+            resolve(true)
+            return
+          }
+        }
+        resolve(false)
+     })
   })
+}
+
 Client.on("messageCreate", async (message) => {
   const {guild, member, content} = message
    
