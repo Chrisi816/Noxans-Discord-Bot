@@ -13,3 +13,30 @@ Client.on("messageCreate", async message => {
   }
     
   })
+Client.on("messageCreate", async (message) => {
+  const {guild, member, content} = message
+   
+  const code = content.split("discord.gg/")[1]
+
+  if (content.includes("discord.gg/")) {
+    const isOurInvite = await isInvite(guild, code)
+    if (!isOurInvite) {
+      message.member.roles.add("938529895347261501")
+      message.member.roles.remove("866732036508614717")
+      message.delete()
+      return message.channel.send(`${member} Bitte Poste keine Einladungen welche mit diesem Discord nichts zu tun haben. Du bekommst vorsichtshalber die MUTE rolle, und deine Bürger rolle wird entfernt`)
+      
+    }
+   return 
+  }
+  if (content.includes("dsc.gg/")) {
+    const isOurInvite = await isInvite(guild, code)
+    if (!isOurInvite) {
+      message.member.roles.add("938529895347261501")
+      message.member.roles.remove("866732036508614717")
+      message.delete()
+      return message.channel.send(`${member} Bitte Poste keine Einladungen welche mit diesem Discord nichts zu tun haben. Du bekommst vorsichtshalber die MUTE rolle, und deine Bürger rolle wird entfernt`)
+    }
+   return 
+  }
+})
