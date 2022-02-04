@@ -64,17 +64,17 @@ Client.on("messageCreate", async (message) => {
       .setThumbnail("https://cdn.discordapp.com/attachments/858761371582464021/908812696676360232/WOD0G8a.png")
     message.channel.send({ embeds: [embed2] })
   }
-  if (message.content === "!neuefraksinaloa") {
+   if (message.content === "!neuefraktionhigh") {
     const embed2 = new discord.MessageEmbed()
       .setColor("PURPLE")
       .setAuthor("Sevenlife Fraktionen")
       .setTitle("Folgende Fraktion wurde gegründet:")
-      .addField("Fraktion:", "<a:acceptit:908806834196971631>  Sinaloa Kartell")
-      .addField("Don / s :", "<@573233863027982341> und <@536565831640023040>")
+      .addField("Fraktion:", "<a:acceptit:908806834196971631>  High Rollin Hustlers")
+      .addField("OG / s :", "<@573233863027982341> und <@536565831640023040>")
       .setThumbnail("https://cdn.discordapp.com/attachments/858761371582464021/922225557687664641/Cartel_De_Sinaloa.png")
       .setFooter("Noxans_IngameSystems")
     message.channel.send({ embeds: [embed2] })
-  }  
+  }    
   if (message.content === "!neuefrakmg13") {
     const embed2 = new discord.MessageEmbed()
       .setColor("PURPLE")
