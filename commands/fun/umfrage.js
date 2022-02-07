@@ -23,6 +23,6 @@ module.exports.run = async (Client, message, args, prefix) => {
     })
 }
 module.exports.help = {
-    name: "wunsch", 
-    aliases: ["w"]
+    name: "umfrage", 
+    aliases: ["u"]
 }
