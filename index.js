@@ -124,9 +124,9 @@ Client.on("messageCreate", async (message) => {
       **G** - Interaktions Menu\n
       **M** - Kofferraum`)
       .addField("**Commands:**", "**/ooc** - OOC Chat")
-      .addField("**Auto Keys:**", `**B** - Sicherheitsgurt an/aus\n
-      **Linke Pfeiltaste** - Linker Blinker\n
-      **Rechte Pfeiltaste** - Rechter Blinker\n
+      .addField("**Auto Keys:**", `**B** - Sicherheitsgurt an/aus
+      **Linke Pfeiltaste** - Linker Blinker
+      **Rechte Pfeiltaste** - Rechter Blinker
       **Untere Pfeiltaste** - Warnblinker`)
       .addField("**Hinweis:**", "**Alle Angaben zu Keys und Commands können sich bis zum Server Start noch ändern** ")
       .setThumbnail("https://cdn.discordapp.com/attachments/950106813435621437/954113542502613063/big.png")
