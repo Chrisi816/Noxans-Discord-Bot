@@ -108,6 +108,31 @@ Client.on("messageCreate", async (message) => {
       .setFooter("Noxans_IngameSystems")
     message.channel.send({ embeds: [embed2] })
   }
+  if (message.content === "!Keys") {
+    const embed2 = new discord.MessageEmbed()
+      .setColor("PURPLE")
+      .setTitle("Keys und Commands:")
+      .addField("**Keys:**", `
+      **F1** - Handy \n
+      **F2** - Inventar\n
+      **F3** - Main Menu\n
+      **F5** - Animationen\n
+      **F9** - Scoreboard\n
+      **F10** - Dialog Menu\n
+      **E** - Interargieren\n
+      **F** - Einsteigen, Austeigen etc.\n
+      **G** - Interaktions Menu\n
+      **M** - Kofferraum`)
+      .addField("**Commands:**", "**/ooc** - OOC Chat")
+      .addField("**Auto Keys:**", `**B** - Sicherheitsgurt an/aus\n
+      **Linke Pfeiltaste** - Linker Blinker\n
+      **Rechte Pfeiltaste** - Rechter Blinker\n
+      **Untere Pfeiltaste** - Warnblinker`)
+      .addField("**Hinweis:**", "**Alle Angaben zu Keys und Commands können sich bis zum Server Start noch ändern** ")
+      .setThumbnail("https://cdn.discordapp.com/attachments/950106813435621437/954113542502613063/big.png")
+      .setFooter("Noxans_Help - 06.09.2022")
+    message.channel.send({ embeds: [embed2] })
+  }
 })
 
 fs.readdirSync('./commands/').forEach(dir => {
