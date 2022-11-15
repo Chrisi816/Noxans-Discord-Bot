@@ -14,15 +14,5 @@ Client.on("ready", async () => {
 		});
 	}, 5000);
 	console.log(`${Client.user.tag} is Online`);
-	let commands;
-	commands.create({
-		name: "ping",
-		description: "Replies with pong",
-	});
-	commands.create({
-		name: "truth",
-		description: "Replies with truth",
-	});
-
 	createCmd(Client, null);
 });
