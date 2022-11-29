@@ -183,7 +183,10 @@ Client.on("messageCreate", async (message) => {
 **M** - Kofferraum\n
 **L** - Zeige die Sprachdistanz`
     )
-    .addField("**Commands:**", "**/ooc** - OOC Chat")
+    .addField("**Commands:**", `
+**/ooc** - OOC Chat \n
+**/removehud** - Versteckt das HUD`
+	     )
     .addField(
       "**Auto Keys:**",
       `**B** - Sicherheitsgurt an/aus
